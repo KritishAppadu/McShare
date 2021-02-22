@@ -1,0 +1,111 @@
+openapi: 3.0.1
+info:
+  title: defaultTitle
+  description: defaultDescription
+  version: '0.1'
+servers:
+  - url: 'https://localhost:44374'
+paths:
+  /api/Customer/UpdateCustomerShares:
+    put:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: id
+          in: query
+          schema:
+            type: string
+          example: D43764
+        - name: NumShares
+          in: query
+          schema:
+            type: string
+          example: '3000'
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            text/plain; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: 'https://localhost:44374'
+    servers:
+      - url: 'https://localhost:44374'
+  /api/Customer:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: 'https://localhost:44374'
+    servers:
+      - url: 'https://localhost:44374'
+  /api/Customer/ChangeCustomerName:
+    put:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: name
+          in: query
+          schema:
+            type: string
+          example: Sterling%20Moss
+        - name: id
+          in: query
+          schema:
+            type: string
+          example: D43764
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            text/plain; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: 'https://localhost:44374'
+    servers:
+      - url: 'https://localhost:44374'
+  /api/Customer/UploadFiles:
+    post:
+      description: Auto generated using Swagger Inspector
+      responses:
+        '415':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/problem+json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: 'https://localhost:44374'
+    servers:
+      - url: 'https://localhost:44374'
+  /api/Customer/GetName:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: name
+          in: query
+          schema:
+            type: string
+          example: John%20dOe
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: 'https://localhost:44374'
+    servers:
+      - url: 'https://localhost:44374'
