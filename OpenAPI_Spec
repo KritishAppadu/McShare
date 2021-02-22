@@ -8,7 +8,7 @@ servers:
 paths:
   /api/Customer/UpdateCustomerShares:
     put:
-      description: Auto generated using Swagger Inspector
+      description: Update number of customer shares and update balance automatically
       parameters:
         - name: id
           in: query
@@ -22,7 +22,7 @@ paths:
           example: '3000'
       responses:
         '200':
-          description: Auto generated using Swagger Inspector
+          description: Name has been correctly changed
           content:
             text/plain; charset=utf-8:
               schema:
@@ -34,7 +34,7 @@ paths:
       - url: 'https://localhost:44374'
   /api/Customer:
     get:
-      description: Auto generated using Swagger Inspector
+      description: List all customers in database
       responses:
         '200':
           description: Auto generated using Swagger Inspector
@@ -49,7 +49,7 @@ paths:
       - url: 'https://localhost:44374'
   /api/Customer/ChangeCustomerName:
     put:
-      description: Auto generated using Swagger Inspector
+      description: Change customer name with id provided
       parameters:
         - name: name
           in: query
@@ -63,7 +63,7 @@ paths:
           example: D43764
       responses:
         '200':
-          description: Auto generated using Swagger Inspector
+          description: Name correctly changed
           content:
             text/plain; charset=utf-8:
               schema:
@@ -75,7 +75,7 @@ paths:
       - url: 'https://localhost:44374'
   /api/Customer/UploadFiles:
     post:
-      description: Auto generated using Swagger Inspector
+      description: Upload XML file/ Validate xml file/ save data in DB/ Save error in error table
       responses:
         '415':
           description: Auto generated using Swagger Inspector
@@ -90,7 +90,7 @@ paths:
       - url: 'https://localhost:44374'
   /api/Customer/GetName:
     get:
-      description: Auto generated using Swagger Inspector
+      description: Searches any name which contain given string
       parameters:
         - name: name
           in: query
@@ -99,7 +99,7 @@ paths:
           example: John%20dOe
       responses:
         '200':
-          description: Auto generated using Swagger Inspector
+          description: Displays names containing John dOe
           content:
             application/json; charset=utf-8:
               schema:
